@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Yupee - Ice Cream Shop</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Yupee - Ice Cream" name="keywords" />
+    <meta content="Yupee - Ice Cream" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.png" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abhaya Libre:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Header Start -->
+    <header class="header">
+      <!-- Navbar Start -->
+      <div class="container-fluid position-relative p-0" style="z-index: 16">
+        <nav
+          class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow p-lg-0"
+        >
+          <div class="container-lg position-relative py-lg-3 px-lg-3">
+            <a href="index.html" class="navbar-brand d-block d-lg-none">
+              <h2 class="m-0 display-4 text-primary" style="font-size: 0">
+                <img src="img/main-logo.png" alt="" />
+              </h2>
+            </a>
+            <button
+              type="button"
+              class="navbar-toggler"
+              data-toggle="collapse"
+              data-target="#navbarCollapse"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-between"
+              id="navbarCollapse"
+            >
+              <a
+                href="index.html"
+                class="navbar-brand mx-3 mx-xl-5 d-none d-lg-block"
+              >
+                <h1 style="font-size: 0">
+                  <img src="img/main-logo.png" alt="" />
+                </h1>
+              </a>
+              <ul class="navbar-nav mx-auto pt-4 pt-lg-0 py-0">
+                <li class="nav-item active">
+                  <a href="index.html" class="nav-link">Welcome</a>
+                </li>
+                <li class="nav-item">
+                  <a href="trending-products.html" class="nav-link">Trending</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    href="#"
+                    class="nav-link dropdown-toggle"
+                    data-toggle="dropdown"
+                    aria-expanded="true"
+                    >Services</a
+                  >
+                  <div class="dropdown-menu">
+                    <a href="#services" class="dropdown-item page-scroll"
+                      >High Quality</a
+                    >
+                    <a href="#flavours" class="dropdown-item page-scroll"
+                      >Flavours</a
+                    >
+                    <a href="#flavours2" class="dropdown-item page-scroll"
+                      >Flavours2</a
+                    >
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a href="client-say.html" class="nav-link">Client</a>
+                </li>
+                <li class="nav-item">
+                  <a href="blog.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+              </ul>
+              <div class="navbar-text">
+                <i class="fa fa-shopping-cart fa-lg mr-2"></i>
+                <i class="fa fa-search fa-lg"></i>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- Navbar End -->
+    </header>
+    <!-- Header End -->
+
+    <!-- Header Start -->
+    <div class="jumbotron jumbotron-fluid page-header" style="margin-bottom: 90px;">
+        <div class="container text-center py-5">
+            <h1 class="text-white display-3 mt-lg-5">Product</h1>
+            <div class="d-inline-flex align-items-center text-white">
+                <p class="m-0"><a class="text-white" href="/">Home</a></p>
+                <i class="fa fa-circle px-3"></i>
+                <p class="m-0">Product</p>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+      <!-- Trending Start -->
+      <section class="section trending">
+        <div class="container-fluid py-5 px-0">
+          <div class="container py-5">
+            <div class="row justify-content-center">
+              <div class="col-lg-5">
+                <h2 class="section-title position-relative text-center mb-5">
+                  Trending Products
+                </h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 text-center">
+                <ul
+                  class="d-flex flex-wrap justify-content-center mb-4 pb-2"
+                  id="trending-flters"
+                >
+                  <li class="img-border-blue m-1 active" data-filter="*">
+                    Butter Scotch
+                  </li>
+                  <li class="img-border-pink m-1" data-filter=".first">
+                    Blue Moon
+                  </li>
+                  <li class="img-border-yellow m-1" data-filter=".second">
+                    Butter Pecan
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="row m-0 trending-container">
+              <div class="col-lg-4 col-md-6 my-4 trending-item first">
+                <div class="position-relative">
+                  <div class="trending-img position-relative overflow-hidden">
+                    <img
+                      class="img-fluid w-100"
+                      src="img/treding-4.jpg"
+                      alt=""
+                    />
+                    <div class="card-overlay">
+                      <div class="d-flex text-center position-relative">
+                        <span class="fa-stack text-pink fa-xxs">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i
+                            class="fa fa-search-plus fa-stack-1x fa-inverse"
+                          ></i>
+                        </span>
+                        <span class="fa-stack text-pink fa-xxs">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i
+                            class="fa fa-shopping-basket fa-stack-1x fa-inverse"
+                          ></i>
+                        </span>
+                        <span class="fa-stack text-pink fa-xxs">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-star fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </div>
+                      <a class="btn btn-warning rounded-pill py-2 px-4 my-3"
+                        >BUY NOW</a
+                      >
+                    </div>
+                  </div>
+                  <div class="position-relative text-center">
+                    <h6 class="mt-4 mb-3"><big>Mexican Chocolate</big></h6>
+                    <p>$262.00</p>
+                    <p>
+                      <i class="far fa-star text-warning fa-lg"></i>
+                      <i class="far fa-star text-warning fa-lg"></i>
+                      <i class="fa fa-star text-warning fa-lg"></i>
+                      <i class="fa fa-star text-warning fa-lg"></i>
+                      <i class="fa fa-star text-warning fa-lg"></i>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 my-4 trending-item second">
+                <div class="position-relative">
+                  <div class="trending-img position-relative overflow-hidden">
+                    <img
+                      class="img-fluid w-100"
+                      src="img/treding-5.jpg"
+                      alt=""
+                    />
+                    <div class="card-overlay">
+                      <div class="d-flex text-center position-relative">
+                        <span class="fa-stack text-pink fa-xxs">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i
+                            class="fa fa-search-plus fa-stack-1x fa-inverse"
+                          ></i>
+                        </span>
+                        <span class="fa-stack text-pink fa-xxs">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i
+                            class="fa fa-shopping-basket fa-stack-1x fa-inverse"
+                          ></i>
+                        </span>
+                        <span class="fa-stack text-pink fa-xxs">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-star fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </div>
+                      <a class="btn btn-warning rounded-pill py-2 px-4 my-3"
+                        >BUY NOW</a
+                      >
+                    </div>
+                  </div>
+                  <div class="position-relative text-center">
+                    <h6 class="mt-4 mb-3"><big>Mexican Chocolate</big></h6>
+                    <p>$262.00</p>
+                    <p>
+                      <i class="fa fa-star text-warning fa-lg"></i>
+                      <i class="fa fa-star text-warning fa-lg"></i>
+                      <i class="fa fa-star text-warning fa-lg"></i>
+                      <i class="fa fa-star text-warning fa-lg"></i>
+                      <i class="fa fa-star text-warning fa-lg"></i>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 my-4 trending-item third">
+                <div class="position-relative">
+                  <div class="trending-img position-relative overflow-hidden">
+                    <img
+                      class="img-fluid w-100"
+                      src="img/treding-3.jpg"
+                      alt=""
+                    />
+                    <div class="card-overlay">
+                      <div class="d-flex text-center position-relative">
+                        <span class="fa-stack text-pink fa-xxs">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i
+                            class="fa fa-search-plus fa-stack-1x fa-inverse"
+                          ></i>
+                        </span>
+                        <span class="fa-stack text-pink fa-xxs">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i
+                            class="fa fa-shopping-basket fa-stack-1x fa-inverse"
+                          ></i>
+                        </span>
+                        <span class="fa-stack text-pink fa-xxs">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-star fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </div>
+                      <a class="btn btn-warning rounded-pill py-2 px-4 my-3"
+                        >BUY NOW</a
+                      >
+                    </div>
+                  </div>
+                  <div class="position-relative text-center">
+                    <h6 class="mt-4 mb-3"><big>Mexican Chocolate</big></h6>
+                    <p>$262.00</p>
+                    <p>
+                      <i class="fa fa-star text-warning fa-lg"></i>
+                      <i class="fa fa-star text-warning fa-lg"></i>
+                      <i class="fa fa-star text-warning fa-lg"></i>
+                      <i class="fa fa-star text-warning fa-lg"></i>
+                      <i class="fa fa-star text-warning fa-lg"></i>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 my-4 trending-item first">
+                <div class="position-relative">
+                  <div class="trending-img position-relative overflow-hidden">
+                    <img
+                      class="img-fluid w-100"
+                      src="img/treding-6.jpg"
+                      alt=""
+                    />
+                    <div class="card-overlay">
+                      <div class="d-flex text-center position-relative">
+                        <span class="fa-stack text-pink fa-xxs">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i
+                            class="fa fa-search-plus fa-stack-1x fa-inverse"
+                          ></i>
+                        </span>
+                        <span class="fa-stack text-pink fa-xxs">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i
+                            class="fa fa-shopping-basket fa-stack-1x fa-inverse"
+                          ></i>
+                        </span>
+                        <span class="fa-stack text-pink fa-xxs">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-star fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </div>
+                      <a class="btn btn-warning rounded-pill py-2 px-4 my-3"
+                        >BUY NOW</a
+                      >
+                    </div>
+                  </div>
+                  <div class="position-relative text-center">
+                    <h6 class="mt-4 mb-3"><big>Mexican Chocolate</big></h6>
+                    <p>$262.00</p>
+                    <p>
+                      <i class="fa fa-star text-warning fa-lg"></i>
+                      <i class="fa fa-star text-warning fa-lg"></i>
+                      <i class="fa fa-star text-warning fa-lg"></i>
+                      <i class="fa fa-star text-warning fa-lg"></i>
+                      <i class="fa fa-star text-warning fa-lg"></i>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 my-4 trending-item second">
+                <div class="position-relative">
+                  <div class="trending-img position-relative overflow-hidden">
+                    <img
+                      class="img-fluid w-100"
+                      src="img/treding-1.jpg"
+                      alt=""
+                    />
+                    <div class="card-overlay">
+                      <div class="d-flex text-center position-relative">
+                        <span class="fa-stack text-pink fa-xxs">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i
+                            class="fa fa-search-plus fa-stack-1x fa-inverse"
+                          ></i>
+                        </span>
+                        <span class="fa-stack text-pink fa-xxs">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i
+                            class="fa fa-shopping-basket fa-stack-1x fa-inverse"
+                          ></i>
+                        </span>
+                        <span class="fa-stack text-pink fa-xxs">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-star fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </div>
+                      <a class="btn btn-warning rounded-pill py-2 px-4 my-3"
+                        >BUY NOW</a
+                      >
+                    </div>
+                  </div>
+                  <div class="position-relative text-center">
+                    <h6 class="mt-4 mb-3"><big>Mexican Chocolate</big></h6>
+                    <p>$262.00</p>
+                    <p>
+                      <i class="fa fa-star text-warning fa-lg"></i>
+                      <i class="fa fa-star text-warning fa-lg"></i>
+                      <i class="fa fa-star text-warning fa-lg"></i>
+                      <i class="fa fa-star text-warning fa-lg"></i>
+                      <i class="fa fa-star text-warning fa-lg"></i>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 my-4 trending-item third">
+                <div class="position-relative">
+                  <div class="trending-img position-relative overflow-hidden">
+                    <img
+                      class="img-fluid w-100"
+                      src="img/treding-2.jpg"
+                      alt=""
+                    />
+                    <div class="card-overlay">
+                      <div class="d-flex text-center position-relative">
+                        <span class="fa-stack text-pink fa-xxs">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i
+                            class="fa fa-search-plus fa-stack-1x fa-inverse"
+                          ></i>
+                        </span>
+                        <span class="fa-stack text-pink fa-xxs">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i
+                            class="fa fa-shopping-basket fa-stack-1x fa-inverse"
+                          ></i>
+                        </span>
+                        <span class="fa-stack text-pink fa-xxs">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-star fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </div>
+                      <a class="btn btn-warning rounded-pill py-2 px-4 my-3"
+                        >BUY NOW</a
+                      >
+                    </div>
+                  </div>
+                  <div class="position-relative text-center">
+                    <h6 class="mt-4 mb-3"><big>Mexican Chocolate</big></h6>
+                    <p>$262.00</p>
+                    <p>
+                      <i class="fa fa-star text-warning fa-lg"></i>
+                      <i class="fa fa-star text-warning fa-lg"></i>
+                      <i class="fa fa-star text-warning fa-lg"></i>
+                      <i class="fa fa-star text-warning fa-lg"></i>
+                      <i class="fa fa-star text-warning fa-lg"></i>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Trending End -->
+
+
+    <!-- Footer Start -->
+    <footer class="footer bg-dark text-light">
+        <div class="container-fluid py-5">
+          <div class="container text-left pt-2">
+            <div class="row justify-content-between text-center text-md-left">
+              <div class="col-lg-4 mb-4">
+                <a href="index.html" class="navbar-brand m-0">
+                  <h2 class="m-0 mt-n2 display-4 text-primary">
+                    <img src="img/logo-footer.png" alt="" />
+                  </h2>
+                </a>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Assumenda ratione molestias deleniti praesentium vitae nesciunt
+                  autem.
+                </p>
+                <span class="fa-stack fa-xxs">
+                  <i class="fa fa-circle fa-stack-2x text-info"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-xxs">
+                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-warning"></i>
+                  <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-xxs">
+                  <i class="fa fa-circle fa-stack-2x text-danger"></i>
+                  <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                </span>
+              </div>
+  
+              <div class="col-lg-4 mb-4">
+                <h5 class="font-weight-bold mb-3">Opening Hours</h5>
+                <p class="mb-2">Monday: Closed</p>
+                <p class="mb-0">Tues - Sat: 7:00 AM - 9:00 PM</p>
+              </div>
+              <div class="col-lg-4 mb-4">
+                <h5 class="font-weight-bold mb-3">Get In Touch</h5>
+                <p class="mb-2"><b> Address:</b> 75/68 Hoang Sa F9, Q3, Tp.HCM</p>
+                <p class="mb-2"><b>Email:</b> yupee@gmail.com</p>
+                <p class="mb-2"><b>Phone:</b> +44 987-654-3210</p>
+                <p class="mb-0"><b>Fax:</b> 1-800-1234-567</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center border-top border-secondary">
+          <div class="container-fluid">
+            <p class="m-0 py-4">
+              Copyright &copy; 2020
+              <a href="/" title="Yupee - Ice cream"> Yupee Store</a>.
+            </p>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer End -->
+  
+      <!-- Back to Top -->
+      <a href="#" class="btn btn-secondary px-2 back-to-top"
+        ><i class="fa fa-angle-double-up"></i
+      ></a>
+  
+      <!-- JavaScript Libraries -->
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+      <script src="lib/easing/easing.min.js"></script>
+      <script src="lib/waypoints/waypoints.min.js"></script>
+      <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+      <script src="lib/isotope/isotope.pkgd.min.js"></script>
+      <script src="lib/lightbox/js/lightbox.min.js"></script>
+  
+      <!-- Contact Javascript File -->
+      <script src="mail/jqBootstrapValidation.min.js"></script>
+      <script src="mail/contact.js"></script>
+  
+      <!-- Template Javascript -->
+      <script src="js/main.js"></script>
+    </body>
+  </html>
+  
